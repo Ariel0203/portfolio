@@ -65,7 +65,8 @@ https://en.bem.info/methodology/quick-start/*/
 }
 
 .title__profile{
-    width: 21%;
+    display: flex;
+    width: 15rem;
 }
 
 .title__container{
@@ -87,6 +88,8 @@ https://en.bem.info/methodology/quick-start/*/
 section.about{
     display: flex;
     justify-content: center;
+    background:#eaf2fd;
+    padding: 15px 0; 
 }
 
 .about__container{
@@ -127,9 +130,16 @@ section.about{
 
 /* Experiencia Académica*/
 
+.academic{
+    background: #eaf2fd;
+    padding: 0 0 25px 0;    
+}
 .academic__title{
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding-top: 20px;
 }
 
 .academic__courses{
@@ -139,29 +149,132 @@ section.about{
     gap: 1rem;
 }
 
+.academic__courses__box{
+    background: white;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.academic__courses__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.academic__courses__item__img img{
+    width: 190px;
+    height: 100px;
+    /* background-color: white; */
+    padding: 15px;
+}
+
 /* experiencia*/
 
 .experience__section__title{
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .experience__box{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.experience__img{
+    width: 60%;
+    padding: 0;
+    border-radius: 30px;
+    box-shadow: 15px 10px 30px 15px #beb9b9;
+}
+
+.experience__info{
+    width: 20%;
+    display: block;
+    align-self: center;
+}
+
+.experience__btn--demo{
+    width: 100px;
+    height: 35px;
+    background:#0451e0;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+}
+
+.experiencia__btn--repo{
+    width: 100px;
+    height: 35px;
+    background:#0451e0;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
 }
 
 /*Contacto*/
 
 section.formcontacto{
+    background: #eaf2fd; 
+    display: flex;
+    justify-content: center;
+}
 
+.formcontacto__title{
+    text-align: center;
+}
+
+.formcontacto__form{
+    width: 100%;
+    margin-bottom: 20px;    
+}
+
+.formcontacto__input{
+    width: 100%;
+    height:  40px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.formcontacto__textarea{
+    width: 100%;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 25px;
+    border: none;
+    font-family: 'Raleway';
+}
+
+.formcontacto__btn{
+    width: 150px;
+    height: 35px;
+    background:#0451e0;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+}
+
+.formcontacto__btn:hover{
+    background: #193364;
 }
 
 /*footeer*/
 
 section.footer{
-   
+   text-align: right;
+   margin-right:  50px;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
